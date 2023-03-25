@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7bd9ff;
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.button {
+    background-color: #0072C6;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background-color: #005BA1;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+    height: 40px;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    }
+    
+    nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    
+    .button {
+    margin-top: 10px;
+    }
+}
+
+
+/* Sessão Principal */
+
+.sessao_principal {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.sessao_principal img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+/* Sessão Subtítulo */
+
+.sessao_ods {
+    weight: 100%;
+    height: 268px;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    weight: 100%;
+    height: 268px;
+    background: #F1F9F7;
+}
+
+.sessao_ods h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+/* Sessão Conteúdo */
+
+.sessao_conteudo {
+    overflow: hidden;
+}
+
+.texto {
+    max-width: calc(100% - 400px);
+    float: left;
+    margin-top: 32px;
+    margin-left: 32px;
+    font-size: 24px;
+}
+
+.image {
+    max-width: 250px;
+    float: right;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+
+/* Rodapé */
+
+.rodape {
+    position: absolute;
+    width: 100%;
+}
+
+.fundo_rodape {
+    background: #264653;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
